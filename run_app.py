@@ -1,5 +1,3 @@
-import sys
-st.write(sys.path)
 # 使用するライブラリのインポート
 import pandas as pd
 # import matplotlib.pyplot as plt
