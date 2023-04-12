@@ -22,6 +22,12 @@ if reset_button =="リセット":
     with open("user_dic.pkl","wb") as f:
         pickle.dump(user_dic, f)
 
+# ユーザ削除
+if st.sidebar.button('ユーザ削除'):
+    user_dic.pop(user_id) 
+    with open("user_dic.pkl","wb") as f:
+        pickle.dump(user_dic, f)
+        
 # 辞書のインポートと読み込み
 else:
     with open('user_dic.pkl', 'rb') as f:
@@ -32,11 +38,7 @@ user_id = 'user_' + st.sidebar.text_input("ユーザID")
 if user_id not in user_dic.keys():
     user_dic[user_id] = [0,'',0,datetime.today().strftime('%Y/%m/%d'),'']
 
-# ユーザ削除
-if st.sidebar.button('ユーザ削除'):
-    user_dic.pop(user_id) 
-    with open("user_dic.pkl","wb") as f:
-        pickle.dump(user_dic, f)
+
         
 # start_date = user_dic[user_id][3]
 # st.sidebar.write(f'記録開始日は{start_date}')
