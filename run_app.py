@@ -39,8 +39,6 @@ delete_button = st.sidebar.button('ユーザ削除')
 if delete_button and user_id != '':
     user_dic.pop(user_id) 
     user_id = "user_"
-
-st.write(user_dic)
         
 # start_date = user_dic[user_id][3]
 # st.sidebar.write(f'記録開始日は{start_date}')
