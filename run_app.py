@@ -38,6 +38,7 @@ if user_id not in user_dic.keys():
 delete_button = st.sidebar.button('ユーザ削除')
 if delete_button and user_id != '':
     user_dic.pop(user_id) 
+    user_id = "user_"
 
 st.write(user_dic)
         
