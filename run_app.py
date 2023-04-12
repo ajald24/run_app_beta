@@ -3,7 +3,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 import streamlit as st
 import pickle
-import folium
+# import folium
 from streamlit_folium import st_folium
 from datetime import datetime
 from PIL import Image
