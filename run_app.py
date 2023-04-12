@@ -35,7 +35,8 @@ if user_id not in user_dic.keys():
     user_dic[user_id] = [0,'',0,datetime.today().strftime('%Y/%m/%d'),'']
 
 # ユーザ削除
-elif st.sidebar.button('ユーザ削除'):
+delete_button = st.sidebar.button('ユーザ削除')
+if delete_button and user_id != '':
     user_dic.pop(user_id) 
 
         
