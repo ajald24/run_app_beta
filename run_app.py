@@ -1,4 +1,3 @@
-!pip install folium
 # 使用するライブラリのインポート
 import pandas as pd
 # import matplotlib.pyplot as plt
