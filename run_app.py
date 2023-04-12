@@ -15,7 +15,7 @@ st.title('ランニングアプリβ版_街道編')
 # if "user_dic" not in locals(): # user_dicの存在確認
 # 後でリセットボタン削除
 reset_button = ""
-if reset_button ="リセット":
+if reset_button =="リセット":
 # if st.sidebar.button('リセット'):
     user_dic = {}
     user_dic["user_"] = [0,'中山道', 0,'2023/04/09',''] # [累計走行距離, 街道, 街道走行距離, 記録開始日付,いいね数]のリスト
