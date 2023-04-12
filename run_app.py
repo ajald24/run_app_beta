@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 # import folium
-from streamlit_folium import st_folium
+# from streamlit_folium import st_folium
 from datetime import datetime
 from PIL import Image
 
